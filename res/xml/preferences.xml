@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/preference_category_title_scheduling" >
+        <hioa.s180212.mappe2.preferences.TimePreference
+            android:key="startTime"
+            android:title="@string/preference_startTime_title" 
+            android:persistent="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preference_category_title_message" >
+        <CheckBoxPreference
+           	android:key="bSendSMS"
+           	android:defaultValue = "true"
+            android:summaryOff="@string/preference_sendsms_summary_off"
+            android:summaryOn="@string/preference_sendsms_summary_on"/>
+        <EditTextPreference
+            android:defaultValue="@string/preference_default_birthday_message"
+            android:key="birthdayMessage"
+            android:persistent="true"
+            android:summary="@string/preference_message_summary"
+            android:title="@string/preference_message_title"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">mappe2</string>
+    <string name="app_name">Wish-o-matic</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="menu_delete">Delete</string>
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+    <string name="preference_category_title_scheduling">Schedule</string>
+    <string name="preference_startTime_title">Start Time</string>
+    <string name="preference_category_title_message">Messaging</string>
+    <string name="preference_default_birthday_message">Happy birthday foo!</string>
+    <string name="preference_message_title">Message</string>
+    <string name="preference_message_summary">Birthday message</string>
+    <string name="no_people">Empty</string>
+    <string name="service_name">SMS Service</string>
+    <string name="birthday_notification_title_template">Birthdays</string>
+    <string name="birthday_notification_placeholder_text_template">Today\'s birthdays: %1$s</string>
+    <string name="preference_sendsms_summary_off">Do not send a SMS</string>
+    <string name="preference_sendsms_summary_on">Send a SMS</string>
+    <string name="list_label_name">Name:</string>
+    <string name="list_label_phone_number">Phone Number:</string>
+    <string name="list_label_birthdate">Birthdate:</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
 
 </resources>

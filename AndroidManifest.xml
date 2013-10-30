@@ -3,12 +3,13 @@
     package="hioa.s180212.mappe2"
     android:versionCode="1"
     android:versionName="1.0" >
-	
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SEND_SMS" />
-    
+	<uses-permission android:name="android.permission.VIBRATE" />
+	    
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
@@ -18,9 +19,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-       
         <activity
-            android:name="hioa.s180212.mappe2.MainActivity"
+            android:name="hioa.s180212.mappe2.PeopleOverviewActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +28,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="hioa.s180212.mappe2.PersonDetailActivity"
+            android:parentActivityName="hioa.s180212.mappe2.PeopleOverviewActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="hioa.s180212.mappe2.preferences.SetPreferencesActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName="hioa.s180212.mappe2.PeopleOverviewActivity" >
+        </activity>
+
+        <provider
+            android:name="hioa.s180212.mappe2.contentprovider.PersonContentProvider"
+            android:authorities="hioa.s180212.mappe2.people.contentprovider" >
+        </provider>
+
+        <receiver android:name="hioa.s180212.mappe2.scheduling.MyScheduleReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="hioa.s180212.mappe2.MyStartServiceReceiver" >
+        </receiver>
+
+        <service
+            android:name="hioa.s180212.mappe2.smsservice.SmsService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/service_name" >
+        </service>
     </application>
+
+
 
 </manifest>

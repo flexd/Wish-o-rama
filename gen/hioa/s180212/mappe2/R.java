@@ -10,6 +10,12 @@ package hioa.s180212.mappe2;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int black=0x7f050001;
+        public static final int black_overlay=0x7f050000;
+        public static final int chalkboard=0x7f050003;
+        public static final int white=0x7f050002;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -17,38 +23,62 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ic_action_new=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000c;
-        public static final int buttonAddPerson=0x7f080003;
-        public static final int buttonSelectBirthdate=0x7f080001;
-        public static final int editFullName=0x7f080000;
-        public static final int editPhoneNumber=0x7f080002;
-        public static final int labelBirthdate=0x7f080008;
-        public static final int labelName=0x7f080006;
-        public static final int labelPhoneNumber=0x7f080007;
-        public static final int listPeople=0x7f080005;
-        public static final int textDateView=0x7f080004;
-        public static final int textListBirthdate=0x7f08000b;
-        public static final int textListFullName=0x7f080009;
-        public static final int textListPhoneNumber=0x7f08000a;
+        public static final int LinearLayout1=0x7f0a0006;
+        public static final int action_add=0x7f0a000e;
+        public static final int action_settings=0x7f0a000d;
+        public static final int buttonCancelPerson=0x7f0a0005;
+        public static final int buttonConfirmSave=0x7f0a0004;
+        public static final int buttonSelectBirthdate=0x7f0a0002;
+        public static final int editFullName=0x7f0a0000;
+        public static final int editPhoneNumber=0x7f0a0001;
+        public static final int row_birthdate=0x7f0a000c;
+        public static final int row_name=0x7f0a000a;
+        public static final int row_phone=0x7f0a000b;
+        public static final int textDateView=0x7f0a0003;
+        public static final int textView1=0x7f0a0007;
+        public static final int textView2=0x7f0a0008;
+        public static final int textView3=0x7f0a0009;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int people_info=0x7f030001;
+        public static final int edit_person=0x7f030000;
+        public static final int person_list=0x7f030001;
+        public static final int person_row=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int birthday_notification_placeholder_text_template=0x7f07000e;
+        public static final int birthday_notification_title_template=0x7f07000d;
+        public static final int button_cancel=0x7f070015;
+        public static final int button_delete=0x7f070016;
+        public static final int button_save=0x7f070014;
+        public static final int cancel=0x7f070004;
+        public static final int list_label_birthdate=0x7f070013;
+        public static final int list_label_name=0x7f070011;
+        public static final int list_label_phone_number=0x7f070012;
+        public static final int menu_delete=0x7f070002;
+        public static final int no_people=0x7f07000b;
+        public static final int preference_category_title_message=0x7f070007;
+        public static final int preference_category_title_scheduling=0x7f070005;
+        public static final int preference_default_birthday_message=0x7f070008;
+        public static final int preference_message_summary=0x7f07000a;
+        public static final int preference_message_title=0x7f070009;
+        public static final int preference_sendsms_summary_off=0x7f07000f;
+        public static final int preference_sendsms_summary_on=0x7f070010;
+        public static final int preference_startTime_title=0x7f070006;
+        public static final int service_name=0x7f07000c;
+        public static final int set=0x7f070003;
     }
     public static final class style {
         /** 
@@ -72,10 +102,15 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f080001;
+        public static final int FullscreenActionBarStyle=0x7f080003;
+        public static final int FullscreenTheme=0x7f080002;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f040000;
     }
 }

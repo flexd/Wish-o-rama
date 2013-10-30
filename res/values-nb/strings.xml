@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Innstillinger</string>
+    <string name="menu_delete">Slett</string>
+    <string name="set">Sett</string>
+    <string name="cancel">Avbryt</string>
+    <string name="preference_category_title_scheduling">Timeplan</string>
+    <string name="preference_startTime_title">Starttid</string>
+    <string name="preference_category_title_message">Melding</string>
+    <string name="preference_default_birthday_message">Gratulerer med dagen!</string>
+    <string name="preference_message_title">Melding</string>
+    <string name="preference_message_summary">Bursdagsmelding</string>
+    <string name="no_people">Ingen</string>
+    <string name="service_name">SMS tjeneste</string>
+    <string name="birthday_notification_title_template">Bursdager</string>
+    <string name="birthday_notification_placeholder_text_template">Dagens bursdager: %1$s</string>
+    <string name="preference_sendsms_summary_off">Ikke send SMS</string>
+    <string name="preference_sendsms_summary_on">Send SMS</string>
+    <string name="list_label_name">Navn:</string>
+    <string name="list_label_phone_number">Telefonummer:</string>
+    <string name="list_label_birthdate">Bursdag:</string>
+    <string name="button_save">Lagre</string>
+    <string name="button_cancel">Avbryt</string>
+    <string name="button_delete">Slett</string>
+
+</resources>
